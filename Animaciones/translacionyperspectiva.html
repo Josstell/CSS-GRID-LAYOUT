@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Transformacion rotacion</title>
+    <style>
+      body{
+        display: flex;
+        align-items:center;
+        justify-content:center;
+        height:100vh;
+        color:white;
+        font-family: Arial;
+        perspective: 200px;
+      /*  perspective-origin: top;*/
+        perspective-origin: top right; 
+      }
+
+      .container{
+        border: 1px solid red;
+      }
+
+      /*.container:hover .cuadrado{*/
+      /*  .cuadrado:hover {*/
+      .container:hover .cuadrado{
+        /*transform: translate(x)*/
+        /* transform: translate(100px); */
+        /*transform: translate(x,y)*/
+        /* transform: translate(100px,100px); */
+        transform: translateZ(-200px);
+      }
+      .cuadrado{
+        width:200px;
+        height: 200px;
+        background: #7dc900;
+        margin: 20px;
+        transition: 0.3s;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+    <div class="cuadrado">
+      Hola mundo!
+    </div>
+    </div>
+  </body>
+</html>
