@@ -43,6 +43,7 @@ h1{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 
     }
 
@@ -83,6 +84,7 @@ background: white;
 display: flex;
 align-items: center;
 justify-content: space-between;
+flex-wrap: wrap;
 
 }
 
@@ -103,12 +105,19 @@ justify-content: space-between;
 .project strong{
   font-family: 'Fjalla One', sans-serif;
 }
-  .project-details{
-    width: 500px;
+
+.project-details{
+    width: 50%;
   }
-  .porject-imageContainer{
-    width: 500px;
+  .project-imageContainer{
+    width: 50%;
   }
+
+  .project-imageContainer img{
+    max-width: 100%;
+  }
+
+
 
 .header{
 background-color:#1b2127;
@@ -117,6 +126,7 @@ display:flex;
 height: 70px;
  align-items: center;
 justify-content: space-between;
+flex-wrap: wrap;
 }
 
 ol, ul{
@@ -155,6 +165,7 @@ figure{
   background-color: #1b2127;
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 }
 .footer img{
   vertical-align: middle;
@@ -213,6 +224,8 @@ border-radius: 5px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
+
 }
 
 .social{
@@ -273,6 +286,8 @@ border-radius: 5px;
 .container{
   /* border: 1px solid red; */
   width: 1000px;
+  /* width: 100%; */
+  flex: 1;
   margin: 0 auto;
   display: inherit;
   justify-content: inherit;
@@ -282,28 +297,70 @@ border-radius: 5px;
 }
 
 /*Desktop first empezar desde el MQ mas grande*/
-@media screen and (max-width:1024px){
-  body{
-    border: 10px solid green;
-  }
-}
-@media screen and (max-width:768px){
-  body{
-    border: 10px solid black;
-  }
+
+ @media screen and (max-width:1024px){
 }
 
-@media screen and (max-width:480px){
+@media screen and (max-width:767px){
+.header{
+  display: block;
+  height: auto;
+}
+.header ol{
+  display: block;
+}
+ .header ol li{
+  height: 50px;
+  text-align: center;
+}
+.header a {
+  justify-content: center;*/
+}
+
+.header .logo{
+  text-align: center;
+}
+.project{
+  display: block;
+}
+.project-imageContainer{
+  width:auto;
+  text-align: center;
+}
+.project-details{
+width: auto;
+font-size: 16px;
+}
+.project-title{
+font-size: 2em;
+}
+.project-url{
+font-size: 1em;
+}
+.project-course{
+font-size: 1em;
+}
+.project-date{
+font-size: 1em;
+}
+.project-description{
+  font-size: 0.8em;
+}
+}
+
+
+
+/* @media screen and (max-width:480px){
   body{
     border: 10px solid red;
   }
 }
-
 @media screen and (max-width:320px){
   body{
     border: 10px solid blue;
   }
-}
+} */
+
 /*selector de etiqueta*/
 /*selector descendente*/
 /*selector de clase*/

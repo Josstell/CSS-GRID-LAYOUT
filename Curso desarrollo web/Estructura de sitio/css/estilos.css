@@ -115,8 +115,9 @@ background-color:#1b2127;
 color: white;
 display:flex;
 height: 70px;
- align-items: center;
+align-items: center;
 justify-content: space-between;
+flex-wrap: wrap;
 }
 
 ol, ul{
@@ -272,7 +273,7 @@ border-radius: 5px;
 
 .container{
   /* border: 1px solid red; */
-  width: 1000px;
+  max-width: 1000px;
   margin: 0 auto;
   display: inherit;
   justify-content: inherit;
@@ -282,7 +283,7 @@ border-radius: 5px;
 }
 
 /*Desktop first empezar desde el MQ mas grande*/
-@media screen and (max-width:1024px){
+/* @media screen and (max-width:1024px){
   body{
     border: 10px solid green;
   }
@@ -303,7 +304,7 @@ border-radius: 5px;
   body{
     border: 10px solid blue;
   }
-}
+} */
 /*selector de etiqueta*/
 /*selector descendente*/
 /*selector de clase*/
